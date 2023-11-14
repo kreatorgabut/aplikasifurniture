@@ -1,484 +1,203 @@
-html {
-  font-size: 75%;
-}
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-}
-ul,
-li {
-  list-style: none;
-}
-input {
-  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
-  width: 144rem;
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
-.daftar {
-  box-sizing: border-box;
-  padding-left: 20rem;
-  height: 1000px;
-  width: 100%;
-  overflow: hidden;
+.container {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  background-color: #ffffff;
-}
-.daftar .auto-group-minimal {
-  margin: 5.9rem 18.8rem 0rem 0rem;
-  width: 46.9rem;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .minimal-Xmi {
-  margin-bottom: 4.7rem;
+  /* max-width: 850px; */
   width: 100%;
-  text-align: center;
-  font-size: 3.6rem;
-  font-weight: 600;
-  line-height: 1.2000000212;
-  color: #ffffff;
-  font-family: "Poppins";
-  white-space: nowrap;
-  display: flex;
-  align-items: baseline;
+  background: #fff;
+  padding: 40px 30px;
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
+  /* perspective: 2700px; */
 }
-.daftar .auto-group-minimal .minimal-Xmi .minimal-Xmi-sub-0 {
-  font-size: 3.6rem;
-  font-weight: 600px;
-  line-height: 1.2000000212;
-  color: #37474f;
-  font-family: Poppins, "Source Sans Pro";
+.container .cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  text-align: left;
 }
-.daftar .auto-group-minimal .minimal-Xmi .minimal-Xmi-sub-1 {
-  font-size: 3.6rem;
-  font-weight: 600;
-  line-height: 1.2000000212;
-  color: #f6b50e;
-  font-family: "poppins";
+.container #flip:checked ~ .cover {
+  transform: rotateY(-180deg);
 }
-.daftar .auto-group-minimal .frame-6-nr4 {
-  margin: 0rem 0rem 4.8rem 11.5rem;
-  align-items: center;
+.container .cover .front,
+.container .cover .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.cover .back {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover::before,
+.container .cover::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 12;
+}
+.container .cover::after {
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.container .cover .text {
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-}
-.daftar .auto-group-minimal .frame-6-nr4 .create-a-new-account-L6t {
-  margin-bottom: 1rem;
-  display: flex;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: #37474f;
-  font-family: "poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-6-nr4 .its-quick-and-easy-SQp {
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.25;
-  color: #37474f;
-  font-family: "poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU {
-  margin-left: 14.6rem;
-  width: 32.3rem;
-  height: 96.4rem;
-  position: relative;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg {
-  width: 32rem;
-  height: 96.4rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz {
-  width: 100%;
-  height: 49.9rem;
-  position: relative;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU {
-  width: 32rem;
-  height: 11.9rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .first-name-Y6U {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #37474f;
-  font-family: "poppins";
-  white-space: nowrap;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .input-field-base-4qW {
-  width: 100%;
-  height: 9.4rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .input-field-base-4qW .input-with-label-cc8 {
-  margin-bottom: 4.6rem;
-  width: 100%;
-  height: 4.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .input-field-base-4qW .input-with-label-cc8 .input-9rx {
-  box-sizing: border-box;
-  padding: 1.4rem 1rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  border: solid 0.1rem #d4dbea;
-  border-radius: 0.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .input-field-base-4qW .input-with-label-cc8 .input-9rx .content-Vvp {
-  width: 13.4rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .input-field-base-4qW .input-with-label-cc8 .input-9rx .content-Vvp .group-5-3xL {
-  margin-right: 0.8rem;
-  width: 2rem;
-  height: 2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-PUU .input-field-base-4qW .input-with-label-cc8 .input-9rx .content-Vvp .your-first-name-PWQ {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #677487;
-  font-family: "poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v {
-  width: 32rem;
-  height: 11.9rem;
-  position: absolute;
-  left: 0;
-  top: 9.5rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .last-name-dvY {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #37474f;
-  font-family: "Poppins";
-  white-space: nowrap;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .input-field-base-MrY {
-  width: 100%;
-  height: 9.4rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .input-field-base-MrY .input-with-label-udA {
-  margin-bottom: 4.6rem;
-  width: 100%;
-  height: 4.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .input-field-base-MrY .input-with-label-udA .input-3zG {
-  box-sizing: border-box;
-  padding: 1.4rem 1rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  border: solid 0.1rem #d4dbea;
-  border-radius: 0.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .input-field-base-MrY .input-with-label-udA .input-3zG .content-CsA {
-  width: 13.4rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .input-field-base-MrY .input-with-label-udA .input-3zG .content-CsA .group-5-mQU {
-  margin-right: 0.8rem;
-  width: 2rem;
-  height: 2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .email-69v .input-field-base-MrY .input-with-label-udA .input-3zG .content-CsA .your-last-name-JfJ {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #677487;
-  font-family: "Poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC {
-  width: 32rem;
-  height: 11.9rem;
-  position: absolute;
-  left: 0;
-  top: 19rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .email-Lrt {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #37474f;
-  font-family: "Poppins";
-  white-space: nowrap;
-  display: flex;
-  align-items: baseline;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .email-Lrt .email-Lrt-sub-0 {
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .email-Lrt .email-Lrt-sub-1 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #eb0909;
-  font-family: "Poppins";
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .input-field-base-w5z {
-  width: 100%;
-  height: 9.4rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .input-field-base-w5z .input-with-label-VNQ {
-  margin-bottom: 4.6rem;
-  width: 100%;
-  height: 4.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .input-field-base-w5z .input-with-label-VNQ .input-EKz {
-  box-sizing: border-box;
-  padding: 1.55rem 16.5rem 1.55rem 1.167rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: solid 0.1rem #d4dbea;
-  border-radius: 0.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .input-field-base-w5z .input-with-label-VNQ .input-EKz .feather-icon-mail-xFz {
-  margin: 0rem 1.167rem 0rem 0rem;
-  width: 1.6667rem;
-  height: 1.3333rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-cAC .input-field-base-w5z .input-with-label-VNQ .input-EKz .text-H3N {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #677487;
-  font-family: "Poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn {
-  width: 32rem;
-  height: 11.9rem;
-  position: absolute;
-  left: 0;
-  top: 28.5rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .password-XiQ {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #eb0909;
-  font-family: "Poppins";
-  white-space: nowrap;
-  display: flex;
-  align-items: baseline;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .password-XiQ .password-XiQ-sub-0 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #37474f;
-  font-family: Poppins, "Source Sans Pro";
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .password-XiQ .password-XiQ-sub-1 {
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .input-field-base-Xbv {
-  width: 100%;
-  height: 9.4rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .input-field-base-Xbv .input-with-label-HLC {
-  margin-bottom: 4.6rem;
-  width: 100%;
-  height: 4.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .input-field-base-Xbv .input-with-label-HLC .input-34U {
-  box-sizing: border-box;
-  padding: 1.4rem 13.6rem 1.4rem 1rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: solid 0.1rem #d4dbea;
-  border-radius: 0.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .input-field-base-Xbv .input-with-label-HLC .input-34U .group-2-n24 {
-  margin-right: 1rem;
-  width: 2rem;
-  height: 2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-ywn .input-field-base-Xbv .input-with-label-HLC .input-34U .text-XEY {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #677487;
-  font-family: "Poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL {
-  width: 32rem;
-  height: 11.9rem;
-  position: absolute;
-  left: 0;
-  top: 38rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .confirm-password-Zh2 {
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #eb0909;
-  font-family: "Poppins";
-  white-space: nowrap;
-  display: flex;
-  align-items: baseline;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .confirm-password-Zh2 .confirm-password-Zh2-sub-0 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #37474f;
-  font-family: "Poppins";
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .confirm-password-Zh2 .confirm-password-Zh2-sub-1 {
-}
-.daftar .auto-group-j9ap-CzL .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .input-field-base-mo6 {
-  width: 100%;
-  height: 9.4rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .input-field-base-mo6 .input-with-label-L5W {
-  margin-bottom: 4.6rem;
-  width: 100%;
-  height: 4.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .input-field-base-mo6 .input-with-label-L5W .input-t72 {
-  box-sizing: border-box;
-  padding: 1.4rem 11.8rem 1.4rem 1rem;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: solid 0.1rem #d4dbea;
-  border-radius: 0.8rem;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .input-field-base-mo6 .input-with-label-L5W .input-t72 .group-2-pmN {
-  margin-right: 1rem;
-  width: 2rem;
-  height: 2rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .frame-48-WQg .auto-group-ymb6-eFz .password-pzL .input-field-base-mo6 .input-with-label-L5W .input-t72 .text-Zix {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2000000817;
-  color: #677487;
-  font-family: Poppins, "Source Sans Pro";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.daftar .auto-group-minimal .frame-49-NJU .sign-fmz {
-  width: 32.3rem;
-  height: 7rem;
-  position: absolute;
-  left: 0;
-  top: 47.9rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.daftar .auto-group-minimal .frame-49-NJU .sign-fmz .base-button-otC {
-  margin-bottom: 1.1rem;
-  width: 100%;
-  height: 4.2rem;
-  text-align: right;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.4000000272;
-  letter-spacing: -0.028rem;
-  color: #ffffff;
-  font-family: Poppins, "Source Sans Pro";
-  white-space: nowrap;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f6b50e;
-  border-radius: 1rem;
-  flex-shrink: 0;
 }
-.daftar .auto-group-minimal .frame-49-NJU .sign-fmz .frame-38-fQc {
-  margin: 0 5.6rem;
-  width: calc(100% - 11.2rem);
+.cover .text .text-1,
+.cover .text .text-2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.cover .text .text-2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .forms {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.container .form-content {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  justify-content: space-between;
 }
-.daftar .auto-group-minimal .frame-49-NJU .sign-fmz .frame-38-fQc .already-have-an-account--QNC {
-  margin-right: 0.9rem;
+.form-content .login-form {
+  width: calc(100% / 2 - 25px);
+  margin-top: 5%;
+  padding: 0 10%;
+}
+.forms .form-content .title {
+  margin-top: 8%;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.3999999364;
-  letter-spacing: -0.024rem;
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.forms .form-content .input-boxes {
+  margin-top: 30px;
+}
+.forms .form-content .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.form-content .input-box input {
+  height: 100%;
+  width: 100%;
+  padding: 0 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  border: 1px solid #cacbce;
+  transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid {
+  border-color: #e9ae0c;
+}
+.form-content .input-box i {
+  position: absolute;
   color: #37474f;
-  font-family: Poppins, "Source Sans Pro";
-  white-space: nowrap;
-  flex-shrink: 0;
+  font-size: 17px;
 }
-.daftar .auto-group-minimal .frame-49-NJU .sign-fmz .frame-38-fQc .sign-in-JiU {
+.forms .form-content .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #37474f;
+}
+.forms .form-content .text a {
+  text-decoration: none;
+}
+.forms .form-content .text a:hover {
+  text-decoration: underline;
+}
+.forms .form-content .button {
+  color: #fff;
+  margin-top: 40px;
+}
+.forms .form-content .button input {
+  color: #fff;
+  background: #f6b50e;
+  border-radius: 6px;
+  padding: 0;
   cursor: pointer;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.3999999364;
-  letter-spacing: -0.024rem;
-  text-decoration-line: underline;
-  color: #f6b50e;
-  font-family: "Poppins";
-  white-space: nowrap;
-  flex-shrink: 0;
+  transition: all 0.4s ease;
 }
-.daftar .frame-427321608-cjA {
-  width: 71.1rem;
-  height: 104.6rem;
-  object-fit: cover;
-  vertical-align: top;
-  flex-shrink: 0;
+.forms .form-content .button input:hover {
+  background: #f6b50e;
+}
+.forms .form-content label {
+  color: #37474f;
+  cursor: pointer;
+}
+.forms .form-content label:hover {
+  text-decoration: underline;
+}
+.forms .form-content .login-text {
+  text-align: center;
+  margin-top: 25px;
+}
+.container #flip {
+  display: none;
+}
+@media (max-width: 730px) {
+  .container .cover {
+    display: none;
+  }
+  .form-content .login-form {
+    width: 100%;
+  }
+  .form-content .signup-form {
+    display: none;
+  }
+  .container #flip:checked ~ .forms .signup-form {
+    display: block;
+  }
+  .container #flip:checked ~ .forms .login-form {
+    display: none;
+  }
 }
