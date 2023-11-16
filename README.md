@@ -1,2 +1,0 @@
-# aplikasifurniture
-PBL aplikasi furniture
