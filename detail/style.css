@@ -1,0 +1,518 @@
+html {
+  font-size: 56%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+input {
+  border: none;
+}
+body {
+  min-height: 100%;
+}
+.show-detail-produk-vWk {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 {
+  width: 100%;
+  height: 118.7rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .line-43-CjA {
+  width: 144rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 0.1rem;
+  top: 10.1rem;
+  background-color: #dadada;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g {
+  width: 130.3rem;
+  height: 56.2rem;
+  position: absolute;
+  left: 8.9rem;
+  top: 27.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .frame-427321491-3zg {
+  margin-right: 5.7rem;
+  width: 30rem;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  border: solid 0.2rem #4ca763;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("white\ chabin.svg");
+  border-radius: 1.8rem;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur {
+  width: 94.6rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi {
+  box-sizing: border-box;
+  padding: 0rem 1.5rem 4.4rem 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .glostad-ocU {
+  margin-bottom: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.3999999653;
+  color: #000000;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .idr-19990000-ijS {
+  margin-bottom: 4.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.06rem;
+  color: #4ca763;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .frame-427321501-qZA {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .frame-427321501-qZA .button-CPi {
+  margin-bottom: 1.2rem;
+  width: 12.3rem;
+  height: 5.4rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .frame-427321501-qZA .button-CPi .base-button-vqW {
+  box-sizing: border-box;
+  padding: 1.6rem 2.4rem 1.5rem 2.4rem;
+  width: 100%;
+  height: 100%;
+  background-color: #29795a;
+  border-radius: 1rem;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .frame-427321501-qZA .button-CPi .base-button-vqW .auto-group-frxn-Fct {
+  margin-right: 4.7rem;
+  width: 2.8rem;
+  height: 100%;
+  text-align: right;
+  padding-left: 35px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3999999762;
+  letter-spacing: -0.032rem;
+  color: #ffffff;
+  font-family: Plus Jakarta Sans, "Source Sans Pro";
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-594u-syi .frame-427321501-qZA .pilih-beli-dan-tentukan-kuantiti-yang-anda-inginkan-W32 {
+  margin-left: 0.1rem;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3999999762;
+  letter-spacing: -0.032rem;
+  color: #8494ad;
+  font-family: Plus Jakarta Sans, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-tfjn-nmE {
+  width: 100%;
+  height: 27.9rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-tfjn-nmE .frame-427321499-Lnk {
+  width: 5.6rem;
+  height: 3.7rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, "Source Sans Pro";
+  white-space: nowrap;
+  border-bottom: solid 0.1rem #dadada;
+  box-sizing: border-box;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .auto-group-7rex-L4g .auto-group-g7tu-Xur .auto-group-tfjn-nmE .frame-427321496-DrY {
+  box-sizing: border-box;
+  padding: 3.5rem 0rem 4.6rem 0rem;
+  width: 94.6rem;
+  height: 24.3rem;
+  position: absolute;
+  left: 0;
+  top: 3.6rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.show-detail-produk-vWk
+  .auto-group-11eq-4N4
+  .auto-group-7rex-L4g
+  .auto-group-g7tu-Xur
+  .auto-group-tfjn-nmE
+  .frame-427321496-DrY
+  .sofa-minimalis-adalah-produk-perabotan-yang-didesain-dengan-pendekatan-minimalisme-dalam-gaya-dan-fungsi-berikut-adalah-deskripsi-umum-mengenai-produk-sofa-minimalis-desain-sederhana-sofa-minimalis-memiliki-desain-yang-sederhana-dan-bersih-garis-garis-lurus-sudut-sudut-tajam-dan-tampilan-minimalis-adalah-ciri-khasnya-desainnya-cenderung-menghindari-ornamen-berlebihan-atau-dekorasi-yang-rumit-warna-netral-sofa-minimalis-sering-hadir-dalam-warna-netral-seperti-putih-hitam-abu-abu-atau-beige-warna-warna-ini-menciptakan-tampilan-yang-tenang-dan-bersih-sesuai-dengan-prinsip-minimalisme-jK6 {
+  max-width: 72.9rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #676767;
+  font-family: Poppins, "Source Sans Pro";
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 {
+  width: 116.25rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 13.95rem;
+  top: 4.4rem;
+  display: flex;
+  align-items: center;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U {
+  margin-right: 34.2rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .minimal-UJc {
+  margin-right: 37.35rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #312d2d;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .minimal-UJc .minimal-UJc-sub-0 {
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .minimal-UJc .minimal-UJc-sub-1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #f6b50e;
+  font-family: Poppins, "Source Sans Pro";
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .frame-2-pFz {
+  margin-bottom: 0.8rem;
+  display: flex;
+  column-gap: 3.2rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .frame-2-pFz .home-xNC {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #312d2d;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .frame-2-pFz .about-us-uHS {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #312d2d;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321613-X8U .frame-2-pFz .shop-3eY {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #312d2d;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321612-yYC {
+  height: 100%;
+  display: flex;
+  column-gap: 3.4rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321612-yYC .search-X3v {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321612-yYC .cart-G1W {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321614-CM6 .frame-427321612-yYC .icon-profile-Cfr {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321623-YUp {
+  width: 16.6rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 10.1rem;
+  top: 14.8rem;
+  display: flex;
+  align-items: center;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321623-YUp .shop-Gfi {
+  margin-right: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3999999762;
+  letter-spacing: -0.032rem;
+  color: #cadfcf;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .auto-group-11eq-4N4 .frame-427321623-YUp .detail-product-BXn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3999999762;
+  letter-spacing: -0.032rem;
+  color: #4ca763;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp {
+  box-sizing: border-box;
+  padding: 13.2rem 8.6rem 4rem 5.4rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #29795a;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp {
+  margin-bottom: 7.3rem;
+  width: 100%;
+  height: 10.3rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-4tag-n1n {
+  width: 27.7rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-4tag-n1n .minimal-Xk4 {
+  margin-bottom: 1.6rem;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-4tag-n1n .minimal-Xk4 .minimal-Xk4-sub-0 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-4tag-n1n .minimal-Xk4 .minimal-Xk4-sub-1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #f6b50e;
+  font-family: Poppins, "Source Sans Pro";
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-4tag-n1n .jl-kedoyan-kec-batam-kota-kota-batam-kepulauan-riau-rQx {
+  max-width: 27.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.26;
+  color: #ffffff;
+  font-family: Plus Jakarta Sans, "Source Sans Pro";
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit {
+  box-sizing: border-box;
+  padding: 1rem 0rem 0.1rem 25.4rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-427321611-tMe {
+  margin: 0rem 37rem 6.8rem 0rem;
+  display: flex;
+  column-gap: 5.3rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-427321611-tMe .home-coS {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-427321611-tMe .about-us-xsJ {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-427321611-tMe .shop-i5n {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-5445-49e {
+  margin-right: 2.3rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-5445-49e .button-Pxc {
+  margin-bottom: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 3.4rem;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .frame-5445-49e .button-8fJ {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 3.4rem;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .auto-group-nqec-ssn {
+  margin: 0.8rem 0;
+  height: calc(100% - 1.6rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .auto-group-nqec-ssn .minimal-Dgk {
+  margin-bottom: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-fjpn-SCp .auto-group-pjxn-xit .auto-group-nqec-ssn .minimal-MY4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .line-12-6Ve {
+  margin-bottom: 1.1rem;
+  width: 129.6rem;
+  height: 0.1rem;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-jqds-39z {
+  margin-right: 51.2rem;
+  width: calc(100% - 51.2rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-jqds-39z .privacy-policy-z5E {
+  margin: 0rem 46.1rem 0.3rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.26;
+  color: #ffffff;
+  font-family: Plus Jakarta Sans, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.show-detail-produk-vWk .frame-427321615-iGp .auto-group-jqds-39z .copyright-minimal-2023-6e4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1075px) {
+}
