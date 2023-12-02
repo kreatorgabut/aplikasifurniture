@@ -34,7 +34,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("gambar atas.png");
+  background-image: url("gambar atas.jpg");
   flex-shrink: 0;
 }
 .home .group .frame-01 {
@@ -53,7 +53,7 @@ body {
   flex-shrink: 0;
 }
 .home .group .frame-01 .frame-02 .minimal {
-  margin-right: 37.35rem;
+  margin-right: 47.5rem;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
@@ -91,19 +91,9 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.home .group .frame-01 .frame-02 .frame-home .about-us {
-  cursor: pointer;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1;
-  color: #ffffff;
-  font-family: Poppins, "Source Sans Pro";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
 .home .group .frame-01 .frame-02 .frame-home .shop {
   text-align: center;
+  text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
@@ -117,13 +107,6 @@ body {
   display: flex;
   column-gap: 3.4rem;
   align-items: center;
-  flex-shrink: 0;
-}
-.home .group .frame-01 .frame-logo-01 .search-u5i {
-  width: 2.4rem;
-  height: 2.4rem;
-  object-fit: contain;
-  vertical-align: top;
   flex-shrink: 0;
 }
 .home .group .frame-01 .frame-logo-01 .keranjang {
@@ -146,7 +129,7 @@ body {
   margin: 0rem 0rem 0.139rem 0.1rem;
   max-width: 58.7rem;
   text-align: center;
-  font-size: 6.4rem;
+  font-size: 5rem;
   font-weight: 600;
   line-height: 1.2000000477;
   color: #ffffff;
@@ -192,6 +175,7 @@ body {
   justify-content: center;
   background-color: #f6b50e;
   flex-shrink: 0;
+  border-radius: 1.5rem;
 }
 .home .group .auto-group .auto-group-1 .auto-group-REQ {
   width: 100%;
@@ -698,7 +682,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("rectangle-3-bg.png");
+  background-image: url("gambar bawah.jpg");
   border-radius: 2.4rem;
   flex-shrink: 0;
 }
@@ -851,15 +835,6 @@ body {
   flex-shrink: 0;
 }
 .home .frame-alamat .home-about-shop .homme {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #ffffff;
-  font-family: Poppins, "Source Sans Pro";
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home .frame-alamat .group-minimal .home-about-shop .about-us {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.5;
