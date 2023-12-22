@@ -4,9 +4,29 @@ include 'header.php';
 if(!isset($_SESSION['admin'])) {
   header('location:../index.php');
 } else {
-  ?>
-  
 
+        if(isset($_POST['search'])){
+          $date = $_POST['date'];
+
+          $check_transaction = mysqli_query($conn, "SELECT id from transaction where created_at = '$date'");
+          $count_transaction = mysqli_num_rows($check_transaction);
+  
+          $check_revenue = mysqli_query($conn, "SELECT SUM(total_price) AS total_transaction FROM transaction where created_at = '$date'");
+          $row = mysqli_fetch_assoc($check_revenue);
+          $count_revenue = $row['total_transaction'];
+
+        }else{
+          $check_transaction = mysqli_query($conn, "SELECT id from transaction");
+          $count_transaction = mysqli_num_rows($check_transaction);
+  
+          $check_revenue = mysqli_query($conn, "SELECT SUM(total_price) AS total_transaction FROM transaction");
+          $row = mysqli_fetch_assoc($check_revenue);
+          $count_revenue = $row['total_transaction'];
+        }
+
+        $check_customer = mysqli_query($conn, "SELECT id from customer");
+        $count_customer = mysqli_num_rows($check_customer);
+    ?>
 
     <div class="container" style="background-color: white; border-radius: 30px">
       <div class="row mt-5" style="padding-top: 20px">
@@ -14,9 +34,24 @@ if(!isset($_SESSION['admin'])) {
       </div>
       <div class="row mt-3">
         <div class="col-4">
-          <div class="form-group" style="padding-left: 20px">
-            <input type="date" class="form-control" name="" />
+          <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+          <div class="" style="padding-left: 20px">
+            <input type="date" class="form-control" name="date" 
+            <?php
+            if(isset($_POST['search'])){
+              $date = $_POST['date'];
+              ?>
+              value="<?= $date; ?>"
+              <?php
+
+              }
+            ?>
+            
+            />
+            <button type="submit" name="search" class="btn btn-success btn-sm mt-2">Search</button>
           </div>
+        </form>
+            
         </div>
       </div>
       <div class="row mt-4" style="padding-left: 20px">
@@ -25,7 +60,7 @@ if(!isset($_SESSION['admin'])) {
             <div class="card-body">
               <b>Total Customers</b>
               <br /><br />
-              <p>Rp. 50.000</p>
+              <p><?php echo $count_customer; ?></p>
             </div>
           </div>
         </div>
@@ -34,7 +69,7 @@ if(!isset($_SESSION['admin'])) {
             <div class="card-body">
               <b>Transaction</b>
               <br /><br />
-              <p>Rp. 50.000</p>
+              <p><?php echo $count_transaction; ?></p>
             </div>
           </div>
         </div>
@@ -43,45 +78,84 @@ if(!isset($_SESSION['admin'])) {
             <div class="card-body">
               <b>Revenue</b>
               <br /><br />
-              <p>Rp. 50.000</p>
+              <p><?php 
+              if ($count_revenue > 0) {
+                echo rupiah($count_revenue); 
+              } else {
+                echo "0"; 
+              }
+            
+              ?></p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row mt-5" style="padding-bottom: 40px">
-        <div class="col-12" style="padding-left: 35px">
-          <h4>Report Purchasing Product</h4>
+      <div class="row mt-5" style="padding-bottom: 40px; margin-bottom: 60px">
+        <div class="col-6 mb-3" style="padding-left: 35px">
+          <h4>Report Transaction</h4>
+        </div>
+        <div class="col-6 mb-3" style="text-align: right;">
+        <a href="transaction-all-pdf.php" target="_blank" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Export All Transaction to PDF</a>
         </div>
         <div class="col-12" style="padding-left: 35px">
           <table id="example" class="table table-striped" style="width: 100%">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>No</th>
+                <th>Transaction Code</th>
+                <th>Total Price</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Detail</th>
+                <th>Export Pdf</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011-04-25</td>
-                <td>$320,800</td>
-              </tr>
-              <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011-07-25</td>
-                <td>$170,750</td>
-              </tr>
+              <?php
+                 if(isset($_POST['search'])){
+                  $date = $_POST['date'];
+                  $result = mysqli_query($conn, "SELECT * FROM transaction where created_at = '$date' order by id desc");
+                } else {
+                  $result = mysqli_query($conn, "SELECT * FROM transaction order by id desc");
+                }
+                  $no = 1;
+                  foreach ($result as $row):
+              ?>
+              <tr style="text-align: center">
+                  <td><?= $no; ?></td>
+                  <td align="left">
+                  <?= $row['transaction_code']; ?>
+                  </td>
+                  <td align="left"><?php echo rupiah($row['total_price']);?></td>
+                  <td align="left"><?= $row['created_at']; ?></td>
+                    <?php
+                        if ($row['status'] == 0) {
+                            ?>
+                            <td align="left"><button class="btn btn-warning btn-sm">Order being checked by admin</button></td>
+                            <?php
+                        } else {
+                            ?>
+                            <td align="left"><button class="btn btn-success btn-sm">Order received by admin</button></td>
+                            <?php
+                        }
+                    ?>
+                    
+
+                  <td align="left"><a href="detail-transaction.php?id_transaction=<?= $row['id']; ?>">
+                      <button class="btn btn-warning btn-sm">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                    </a>
+                </td>
+                <td align="left">
+                <a href="transaction-pdf.php?id_transaction=<?= $row['id'] ?>" target="_blank" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Export PDF</a>
+                </td>
+                    <?php 
+              $no++;
+            ?>
+            </tr>
+            <?php endforeach; ?>
             </tbody>
           </table>
         </div>

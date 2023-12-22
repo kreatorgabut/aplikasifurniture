@@ -4,60 +4,31 @@ include 'header.php';
 if(!isset($_SESSION['admin'])) {
   header('location:../index.php');
 } else {
+    $id = $_GET['id'];
+    $category = mysqli_query($conn, "SELECT * from category where id = '$id'");
+    $data = mysqli_fetch_assoc($category);
   ?>
-  
 
 
-  <div class="container" style="background-color: white; border-radius: 30px; margin-bottom: 50px">
+  <div class="container" style="background-color: white; border-radius: 30px">
       <div class="row mt-5" style="padding-top: 20px">
-        <h4 class="mt-3" style="padding-left: 35px">Product</h4>
-        <p style="padding-left: 35px">List Of Product</p>
+        <h4 class="mt-3" style="padding-left: 35px">Add Product</h4>
       </div>
 
-      <div class="row mb-4" style="padding-left: 20px">
-        <div class="col-3">
-          <a href="add-product.php">
-            <button class="btn btn-success btn-sm">Create Product</button></a
-          >
-        </div>
-      </div>
-
-      <div class="row" style="padding-left: 20px">
-      <?php 
-				$result = mysqli_query($conn, "SELECT * FROM product");
-				$no =1;
-				while ($row = mysqli_fetch_assoc($result)) {
-
-          $category_id = $row['category_id'];
-          $category = mysqli_query($conn, "SELECT * from category where id = '$category_id'");
-          $data_category = mysqli_fetch_assoc($category);
-				?>
-
-        <div class="col-4 mb-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="../../image/product/<?= $row['image']; ?>"
-              class="card-img-top"
-              alt="..."
-              height="200px" />
-            <div class="card-body">
-              <h4><?= $row['name'];  ?></h4>
-              <h6>Category : <?= $data_category['category_name']; ?></h6>
-              <p class="card-text" style="font-size: 60%"> Stok :
-              <?= $row['stock'];  ?>
-              </p>
-              <p><?= rupiah($row['price']);  ?></p>
-              <a href="edit-product.php?id=<?= $row['id']; ?>"><i class="bi bi-pencil"></i></a> &nbsp;
-              <a href="controller/delete-product.php?id=<?= $row['id']; ?>" onclick="return confirm('Are you sure?')"><i class="bi bi-trash"></i></a>
-            </div>
+    <form action="controller/update-category.php" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="id" value="<?= $data['id']; ?>">
+    <div class="row" style="padding-left: 20px; padding-bottom: 40px">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="">Category Name</label>
+            <input type="text" class="form-control" name="category_name" value="<?= $data['category_name']; ?>" />
           </div>
         </div>
-
-        <?php
-					}
-				 ?>
-  
+        <div class="col-6 mt-4">
+          <button class="btn btn-success" type="submit">Update Category</button>
+        </div>
       </div>
+    </form>
     </div>
    <!-- Modal -->
    <div
