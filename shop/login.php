@@ -1,18 +1,17 @@
 <?php
-session_start();
-include '../connection/connection.php';
-if(isset($_SESSION['admin'])) {
-  header('location:index.php');
-} else {
-
-?>
-
-<!DOCTYPE html>
+  session_start();
+  include 'connection/connection.php';
+  
+  if(isset($_SESSION['user'])) {
+    header('location:/');
+  } else {
+  ?>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <title>Login Admin</title>
-    <link rel="stylesheet" href="../assets_auth/style.css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets_auth/style.css" />
     <!-- Fontawesome CDN Link -->
     <link
       rel="stylesheet"
@@ -24,28 +23,29 @@ if(isset($_SESSION['admin'])) {
       <input type="checkbox" id="flip" />
       <div class="cover">
         <div class="front">
-          <img src="../assets_auth/bg.png" alt="" />
+          <img src="assets_auth/bg.png" alt="" />
         </div>
       </div>
       <div class="forms">
         <div class="form-content">
           <div class="login-form">
+            <a href="/" style="text-decoration: none;">
             <h1 style="color: #37474f">
               Mini<span style="color: #f6b50e">mal</span>
             </h1>
-            <div class="title">Login Admin</div>
+            </a>
+            <div class="title">Login</div>
             <div style="text-align: center">Welcome Back</div>
             <form action="controller/login.php" method="POST">
               <div class="input-boxes">
-                <label for="username">Username</label>
+                <label for="password">Email</label>
                 <div class="input-box">
                   <i class="fas fa-envelope" style="padding: 3%"></i>
                   <input
-                    type="text"
-                    placeholder="enter your Username"
-                    autofocus
+                    type="email"
+                    placeholder="enter your email"
                     required
-                    name="username" />
+                    name="email" />
                 </div>
                 <label for="password">Password</label>
                 <div class="input-box">
@@ -62,6 +62,12 @@ if(isset($_SESSION['admin'])) {
                     value="Login"
                     style="text-align: center" />
                 </div>
+                <div class="text sign-in-text" style="text-align: center">
+                  Don't have an account?
+                  <a href="register.php"
+                    ><label style="color: #f6b50e">Sign Up</label></a
+                  >
+                </div>
               </div>
             </form>
           </div>
@@ -71,6 +77,9 @@ if(isset($_SESSION['admin'])) {
   </body>
 </html>
 
-<?php
-}
+  <?php
+
+  }
+
+
 ?>

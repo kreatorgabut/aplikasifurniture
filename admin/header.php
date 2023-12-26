@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include '../connection/connection.php';
+include '../controller/format-rupiah.php';
 
 ?>
 
@@ -49,6 +50,9 @@ include '../connection/connection.php';
           <ul class="navbar-nav mx-auto mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="index.php">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="category.php">Category</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.php">Product</a>
